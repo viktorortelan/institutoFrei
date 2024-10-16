@@ -1,0 +1,204 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh auto;
+
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .infoTitulo {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: 40px 0px;
+
+            h1 {
+                font: 400 26px Poppins, sans-serif;
+                text-align: center;
+            }
+        }
+
+        .carrossel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+
+            .imagem-grande {
+                margin-bottom: 20px;
+
+                img {
+                    width: 300px; 
+                    height: auto;
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            .miniaturas {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+
+                .miniatura {
+                    img {
+                        width: 50px; 
+                        height: 50px;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        transition: transform 0.3s ease;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+
+        .botoes{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 40px;
+
+            button{
+                font: 400 20px poppins;
+                text-decoration: none;
+                padding: 7px 10px;
+                border-radius: 5px;
+                border: 2px solid transparent;
+                color: #ffff;
+                background-color: #161616;
+                transition: .3s;
+                cursor: pointer;
+    
+    
+            }
+            button:hover{
+                background-color: #f3eded;
+                color: #000000;
+                transform: matrix(1.1);
+                border: 2px solid #000000;
+            }
+            button:active{
+                background-color: #161616;
+                color: #f3eded;
+                transform: matrix(1.1);
+                border: 2px solid #f3eded;
+            }
+        }
+    }
+
+    .risco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        margin-top: 100px;
+        background-color: rgb(0, 119, 255);
+        padding: 60px 0px;
+
+        h1{
+            font: 500 32px poppins;
+            color: #f5f5f5;
+        }
+        h2{
+            font: 500 28px poppins;
+            color: #f5f5f5;
+        }
+    }
+
+    .infoCurso{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 50px;
+
+        .titulo{
+            width: 90%;
+            h1{
+                font: 500 30px poppins;
+                margin-top: 50px;
+            }
+        }
+
+        .cartoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 30px;
+            width: 80%;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                border-radius: 10px;
+                border: 2px solid rgb(26, 25, 25);
+                
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius:11px 11px 0px 0px ;
+                }
+
+                .infos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 20px;
+                    padding: 20px 15px;
+
+                    h1{
+                        font: 500 26px/20px poppins ;
+                    }
+
+                    p{
+                        font: 400 18px/24px poppins;
+                    }
+
+                    button{
+                        font: 400 20px poppins;
+                        text-decoration: none;
+                        padding: 7px 10px;
+                        border-radius: 5px;
+                        border: 2px solid transparent;
+                        color: #ffff;
+                        background-color: #0099ff;
+                        transition: .3s;
+                        cursor: pointer;
+                        align-self: self-start;
+            
+            
+                    }
+                    button:hover{
+                        background-color: #f3eded;
+                        color: #000000;
+                        transform: matrix(1.1);
+                        border: 2px solid #0099ff;
+                    }
+                    button:active{
+                        background-color: #0099ff;
+                        color: #f3eded;
+                        transform: matrix(1.1);
+                        border: 2px solid #f3eded;
+                    }
+                }
+                
+            }
+        }
+    }
+}
