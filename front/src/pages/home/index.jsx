@@ -79,7 +79,12 @@ export default function Home() {
                             <button>Inscrições abertas!</button>
                         </div>
                     </div>
-                    <div className="card">
+                    
+
+                </div>
+
+                <div className="cartoes2">
+                <div className="card">
                         <img src="/assets/images/informatica.jpg" alt="" />
                         <div className="infos">
                             <h1>Informatica</h1>

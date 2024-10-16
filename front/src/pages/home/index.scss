@@ -138,17 +138,92 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             gap: 30px;
-            width: 80%;
+            
 
             .card{
                 display: flex;
                 flex-direction: column;
-                width: 400px;
+                width: 500px;
                 border-radius: 10px;
                 border: 2px solid rgb(26, 25, 25);
+                box-shadow: 2px 3px 8px gray;
+                transition: .3s;
                 
+                img{
+                    width: 100%;
+                    height: 300px;
+                    border-radius:11px 11px 0px 0px ;
+                }
+
+                .infos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 20px;
+                    padding: 20px 15px;
+
+                    h1{
+                        font: 500 26px/20px poppins ;
+                    }
+
+                    p{
+                        font: 400 18px/24px poppins;
+                    }
+
+                    button{
+                        font: 400 20px poppins;
+                        text-decoration: none;
+                        padding: 7px 10px;
+                        border-radius: 5px;
+                        border: 2px solid transparent;
+                        color: #ffff;
+                        background-color: #0099ff;
+                        transition: .3s;
+                        cursor: pointer;
+                        align-self: self-start;
+            
+            
+                    }
+                    button:hover{
+                        background-color: #f3eded;
+                        color: #000000;
+                        transform: matrix(1.1);
+                        border: 2px solid #0099ff;
+                    }
+                    button:active{
+                        background-color: #0099ff;
+                        color: #f3eded;
+                        transform: matrix(1.1);
+                        border: 2px solid #f3eded;
+                    }
+                }
+            }
+            .card:hover{
+                transform: scale(1.1);
+            }
+        }
+        
+
+        .cartoes2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 30px;
+            background-color: #f5f5f5;
+            
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                border-radius: 10px;
+                border: 2px solid rgb(26, 25, 25);
+                box-shadow: 2px 3px 8px gray;
+                transition: .3s;
+
                 img{
                     width: 100%;
                     height: 300px;
@@ -199,6 +274,12 @@
                 }
                 
             }
+
+            .card:hover{
+                transform: scale(1.1);
+            }
         }
+
+       
     }
 }
